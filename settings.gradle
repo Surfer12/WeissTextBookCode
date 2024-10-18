@@ -11,4 +11,3 @@ plugins {
 }
 
 rootProject.name = 'WeissJavaDevelopementGuide'
-include('app')
