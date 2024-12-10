@@ -1,0 +1,200 @@
+    # Vim Commands Cheat Sheet
+
+    This cheat sheet provides a comprehensive list of Vim commands for efficient navigation and editing within files. The commands are categorized for clarity and ease of use.
+
+    ## Basic Navigation
+    - `gg`: Jump to the start of the file.
+    - `G`: Jump to the end of the file.
+    - `H`: Move to the top of the screen.
+    - `M`: Move to the middle of the screen.
+    - `L`: Move to the bottom of the screen.
+    - `fx`: Move to the next occurrence of the character `x` on the current line.
+    - `;`: Repeat the last `f`, `t`, `F`, or `T` command.
+
+    ## Basic Editing
+    - `dd`: Delete a line.
+    - `x`: Delete a single character.
+    - `X`: Delete the character before the cursor.
+    - `D`: Delete from the cursor to the end of the line.
+    - `dw`: Delete a word.
+    - `cw`: Change a word (delete and enter Insert Mode).
+    - `C`: Change from the cursor to the end of the line (delete and enter Insert Mode).
+    - `cc`: Change the entire line (same as `S`).
+    - `o`: Open a new line and enter Insert Mode.
+    - `>>`: Indent the current line.
+    - `<<`: Un-indent the current line.
+    - `J`: Join the current line with the next line.
+    - `~`: Toggle the case of the character under the cursor.
+
+    ## Visual Mode
+    - `v`: Enter Visual Mode (character-wise selection).
+    - `V`: Enter Visual Line Mode (select entire lines).
+    - `Ctrl+v`: Enter Visual Block Mode (select rectangular blocks).
+    - `y`: Yank (copy) selected text.
+    - `d`: Delete selected text.
+    - `c`: Change (delete and enter Insert Mode).
+    - `>`: Indent selected text.
+    - `<`: Un-indent selected text.
+
+    ## Search and Replace
+    - `/pattern`: Search for `pattern` forward in the file.
+    - `?pattern`: Search for `pattern` backward in the file.
+    - `n`: Repeat the last search in the same direction.
+    - `N`: Repeat the last search in the opposite direction.
+    - `:%s/old/new/g`: Replace all occurrences of `old` with `new` in the file.
+    - `:s/old/new/g`: Replace all occurrences of `old` with `new` in the current line.
+
+    ## Registers and Macros
+    - `"xy`: Yank (copy) into register `x`.
+    - `"xp`: Paste the content of register `x`.
+    - `q<letter>`: Start recording a macro into register `<letter>`.
+	Use Vim commands to navigate and edit:
+	•	gg to jump to the start of the file.
+	•	dd to delete a line.
+	•	/function to search for “function”.
+	•	o to open a new line and enter Insert Mode.
+	3.	Save your work with \w
+	•	x to delete a single character
+	•	yy to copy (yank) a line
+	•	p to paste a line after the cursor
+	•	u to undo the last action
+	•	Ctrl+r to redo an undone action
+	•	$ to move to the end of the line
+	•	0 (zero) to move to the beginning of the line
+	•	dw to delete a word
+	•	cw to change a word (delete and enter insert mode)
+    The provided text includes some key Vim commands, which are essential for navigating and editing files efficiently. Here’s a continuation and possible extension of other commonly used Vim commands, categorized for clarity:
+
+Basic Navigation
+
+	•	H: Move to the top of the screen.
+	•	M: Move to the middle of the screen.
+	•	L: Move to the bottom of the screen.
+	•	G: Jump to the end of the file.
+	•	fx: Move to the next occurrence of the character x on the current line.
+	•	;: Repeat the last f, t, F, or T command.
+
+Advanced Editing
+
+	•	x: Delete the character under the cursor.
+	•	X: Delete the character before the cursor.
+	•	D: Delete from the cursor to the end of the line.
+	•	C: Change from the cursor to the end of the line (delete and enter Insert Mode).
+	•	cc: Change the entire line (same as S).
+	•	>>: Indent the current line.
+	•	<<: Un-indent the current line.
+	•	J: Join the current line with the next line.
+	•	~: Toggle the case of the character under the cursor.
+
+Visual Mode
+
+	•	v: Enter Visual Mode (character-wise selection).
+	•	V: Enter Visual Line Mode (select entire lines).
+	•	Ctrl+v: Enter Visual Block Mode (select rectangular blocks).
+	•	y: Yank (copy) selected text.
+	•	d: Delete selected text.
+	•	c: Change (delete and enter Insert Mode).
+	•	>: Indent selected text.
+	•	<: Un-indent selected text.
+
+Search and Replace
+
+	•	/pattern: Search for pattern forward in the file.
+	•	?pattern: Search for pattern backward in the file.
+	•	n: Repeat the last search in the same direction.
+	•	N: Repeat the last search in the opposite direction.
+	•	:%s/old/new/g: Replace all occurrences of old with new in the file.
+	•	:s/old/new/g: Replace all occurrences of old with new in the current line.
+
+Registers and Macros
+
+	•	"xy: Yank (copy) into register x.
+	•	"xp: Paste the content of register x.
+	•	q<letter>: Start recording a macro into register <letter>.
+	•	q: Stop recording a macro.
+	•	@<letter>: Play back the macro stored in register <letter>.
+	•	@@: Repeat the last macro.
+
+File Management
+
+	•	:w: Save the file.
+	•	:q: Quit Vim.
+	•	:wq: Save and quit Vim.
+	•	:q!: Quit without saving.
+	•	:e filename: Open a file named filename.
+	•	:bn: Switch to the next buffer.
+	•	:bp: Switch to the previous buffer.
+	•	:bd: Close the current buffer.
+
+Split Windows
+
+	•	:split: Split the window horizontally.
+	•	:vsplit: Split the window vertically.
+	•	Ctrl+w h: Move to the split window to the left.
+	•	Ctrl+w l: Move to the split window to the right.
+	•	Ctrl+w j: Move to the split window below.
+	•	Ctrl+w k: Move to the split window above.
+	•	Ctrl+w q: Close the current split window.
+
+Tabs
+
+	•	:tabnew: Open a new tab.
+	•	:tabclose: Close the current tab.
+	•	:tabn: Move to the next tab.
+	•	:tabp: Move to the previous tab.
+
+Additional Navigation Commands
+
+	•	w: Move the cursor to the beginning of the next word.
+	•	b: Move the cursor to the beginning of the previous word.
+	•	e: Move the cursor to the end of the current word.
+	•	%: Jump to the matching parenthesis, bracket, or brace.
+	•	*: Search forward for the word under the cursor.
+	•	#: Search backward for the word under the cursor.
+
+Advanced Editing Commands
+
+	•	ciw: Change the inner word (delete the word under the cursor and enter Insert Mode).
+	•	diw: Delete the inner word (delete the word under the cursor).
+	•	y$: Yank (copy) from the cursor position to the end of the line.
+	•	p: Paste the yanked or deleted text after the cursor.
+	•	P: Paste the yanked or deleted text before the cursor.
+
+Visual Mode Enhancements
+
+	•	gv: Re-select the last visual selection.
+	•	o: In Visual Mode, move to the other end of the highlighted text.
+
+Marks and Jumps
+
+	•	m{a-z}: Set a mark at the current cursor position.
+	•	'{a-z}: Jump to the beginning of the line where the mark is set.
+	•	``{a-z}`: Jump to the exact position where the mark is set.
+
+Buffers and Windows
+
+	•	:ls: List all open buffers.
+	•	:b{n}: Switch to buffer number {n}.
+	•	Ctrl+^: Switch to the previously edited buffer.
+	•	Ctrl+w s: Split the window horizontally.
+	•	Ctrl+w v: Split the window vertically.
+	•	Ctrl+w c: Close the current window.
+
+Command-Line Mode Enhancements
+
+	•	q:: Open the command-line window to view and edit previous commands.
+	•	q/: Open the command-line window to view and edit previous search patterns.
+
+Registers and Macros
+
+	•	"ayy: Yank the current line into register a.
+	•	"ap: Paste the contents of register a.
+	•	q{a-z}: Start recording a macro into register {a-z}.
+	•	q: Stop recording the macro.
+	•	@{a-z}: Execute the macro stored in register {a-z}.
+
+Miscellaneous
+
+	•	Ctrl+g: Display the current file name and cursor position.
+	•	ga: Display the ASCII value of the character under the cursor.
+	•	zz: Center the current line in the window.
